@@ -6,13 +6,13 @@ import com.zelda.annuaire.service.exceptions.VetementsNotFoundException;
 import java.util.List;
 
 public interface IVetementsService {
-    Vetements addArmure(Vetements armure);
+    Vetements addVetement(Vetements vetement);
 
-    Vetements updateArmure(Vetements armure, int id) throws VetementsNotFoundException;
+    Vetements updateVetement(Vetements vetement, int id) throws VetementsNotFoundException;
 
-    void deleteArmureById(int id);
+    void deleteVetementById(int id);
 
-    List<Vetements> getAllArmures();
+    List<Vetements> getAllVetements();
 
-    Vetements getArmureById(int id) throws VetementsNotFoundException;
+    Vetements getVetementById(int id) throws VetementsNotFoundException;
 }

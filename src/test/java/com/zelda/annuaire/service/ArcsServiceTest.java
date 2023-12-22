@@ -104,7 +104,7 @@ class ArcsServiceTest {
         String expectedMessage = "L'arc " + idArc + " n'existe pas.";
         String actualMessage = exception.getMessage();
 
-        assertEquals(actualMessage, expectedMessage);
+        assertEquals(expectedMessage, actualMessage);
     }
 
 

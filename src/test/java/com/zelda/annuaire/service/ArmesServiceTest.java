@@ -104,6 +104,6 @@ public class ArmesServiceTest {
         String expectedMessage = "L'arme " + idArme + " n'existe pas.";
         String actualMessage = exception.getMessage();
 
-        assertEquals(actualMessage, expectedMessage);
+        assertEquals(expectedMessage, actualMessage);
     }
 }

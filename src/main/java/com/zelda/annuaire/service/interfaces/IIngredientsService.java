@@ -6,13 +6,13 @@ import com.zelda.annuaire.service.exceptions.IngredientsNotFoundException;
 import java.util.List;
 
 public interface IIngredientsService {
-    Ingredients addMateriel(Ingredients materiel);
+    Ingredients addIngredient(Ingredients ingredient);
 
-    Ingredients updateMateriel(Ingredients materiel, int id) throws IngredientsNotFoundException;
+    Ingredients updateIngredient(Ingredients ingredient, int id) throws IngredientsNotFoundException;
 
-    void deleteMaterielById(int id);
+    void deleteIngredientById(int id);
 
-    List<Ingredients> getAllMateriaux();
+    List<Ingredients> getAllIngredients();
 
-    Ingredients getMaterielById(int id) throws IngredientsNotFoundException;
+    Ingredients getIngredientById(int id) throws IngredientsNotFoundException;
 }

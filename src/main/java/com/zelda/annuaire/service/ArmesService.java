@@ -29,19 +29,19 @@ public class ArmesService implements IArmesService {
     @Override
     public Armes updateArme(Armes arme, int id) throws ArmesNotFoundException {
         Armes armes = getArmeById(id);
-        armes.setJeux(armes.getJeux());
-        armes.setTypeArme(armes.getTypeArme());
-        armes.setNom(armes.getNom());
-        armes.setAttaqueBase(armes.getAttaqueBase());
-        armes.setAttaqueRang1Max(armes.getAttaqueRang1Max());
-        armes.setAttaqueRang2Max(armes.getAttaqueRang2Max());
-        armes.setDurabiliteBase(armes.getDurabiliteBase());
-        armes.setDurabiliteRang1Max(armes.getDurabiliteRang1Max());
-        armes.setDurabiliteRang2Max(armes.getDurabiliteRang2Max());
-        armes.setJetEffet(armes.getJetEffet());
-        armes.setJetBase(armes.getJetBase());
-        armes.setJetBonus(armes.getJetBonus());
-        armes.setDisponibilite(armes.getDisponibilite());
+        armes.setJeux(arme.getJeux());
+        armes.setTypeArme(arme.getTypeArme());
+        armes.setNom(arme.getNom());
+        armes.setAttaqueBase(arme.getAttaqueBase());
+        armes.setAttaqueRang1Max(arme.getAttaqueRang1Max());
+        armes.setAttaqueRang2Max(arme.getAttaqueRang2Max());
+        armes.setDurabiliteBase(arme.getDurabiliteBase());
+        armes.setDurabiliteRang1Max(arme.getDurabiliteRang1Max());
+        armes.setDurabiliteRang2Max(arme.getDurabiliteRang2Max());
+        armes.setJetEffet(arme.getJetEffet());
+        armes.setJetBase(arme.getJetBase());
+        armes.setJetBonus(arme.getJetBonus());
+        armes.setDisponibilite(arme.getDisponibilite());
         return armesDao.save(armes);
     }
 

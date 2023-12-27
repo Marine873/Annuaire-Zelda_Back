@@ -1,9 +1,6 @@
 package com.zelda.annuaire.controller;
 
-import com.zelda.annuaire.model.Arcs;
 import com.zelda.annuaire.model.Boucliers;
-import com.zelda.annuaire.repository.IBoucliersDao;
-import com.zelda.annuaire.service.exceptions.ArcsNotFoundException;
 import com.zelda.annuaire.service.exceptions.BoucliersNotFoundException;
 import com.zelda.annuaire.service.interfaces.IBoucliersService;
 import org.springframework.http.HttpStatus;
